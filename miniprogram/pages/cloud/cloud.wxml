@@ -1,0 +1,19 @@
+<!--pages/cloud/cloud.wxml-->
+<view class='outer'>
+  <view class='common name'>{{name}}</view>
+  <view class='common still'>距离 发售 还有</view>
+  <view class='common time'>{{day + ' 天 ' + hour + ' 时 ' + minute+' 分 '+sec+' 秒 ' }}</view>
+</view>
+<!-- <image src="cloud://dh-prylc.6468-dh-prylc/cyber.png"></image> -->
+<view class='my'>
+  <!-- <button bindtap='insert'>click here to insert</button> -->
+  <!-- <button bindtap='update'>click here to update</button> -->
+  <!-- <button bindtap='sum'>click here to sum</button> -->
+  <button bindtap='getOpenId'>获取当前用户</button>
+  <button bindtap='mutilDel'>删除所有图片</button>
+
+  <button bindtap="uploadImage">上传图片</button>
+  <!-- <button bindtap="getFile">更新图片显示</button> -->
+  <image wx:for="{{imgList}}" wx:key="{{item._id}}" src='{{item.fileID}}'></image>
+  <button data-fileid="cloud://dh-prylc.6468-dh-prylc-1259606955/example.png" bindtap='download'>download</button>
+</view>

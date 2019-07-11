@@ -1,0 +1,6 @@
+<view class='outer'>
+  <view class='common name'>{{name}}</view>
+  <view class='common still'>距离 发售 还有</view>
+  <view class='common time'>{{day + ' 天 ' + hour + ' 时 ' + minute+' 分 '+sec+' 秒 ' }}</view>
+</view>
+<image src="cloud://dh-prylc.6468-dh-prylc/cyber.png"></image>

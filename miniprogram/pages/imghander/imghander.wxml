@@ -1,0 +1,2 @@
+<!--pages/imghander/imghander.wxml-->
+<button bindtap='getFile'>getFile</button>
